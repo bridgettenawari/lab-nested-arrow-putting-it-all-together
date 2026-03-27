@@ -1,0 +1,31 @@
+Create createLoginTracker (userInfo)
+This outer function will initialize the login feature.
+The userInfo parameter will be an object containing:
+username: A string representing the username.
+password: A string representing the user’s password.
+Example:
+{
+    "username": "user1",
+    "password": "password123"
+}
+
+Initialize Login Tracking
+Inside createLoginTracker, initialize a variable attemptCount to keep track of the number of login attempts.
+Set attemptCount to 0 initially.
+Define and Return an Inner Arrow Function:
+Nested inside createLoginTracker, define an arrow function to handle each login attempt.
+This inner function should:
+Accept a parameter passwordAttempt representing the password entered by the user.
+Increment attemptCount each time it’s called.
+Check if passwordAttempt matches userInfo.password.
+Return an appropriate message based on whether the login is successful, failed, or if the account is locked due to too many attempts.
+Inside createLoginTracker, implement the nested arrow function with the following functionality:
+      1: Increment attemptCount
+      Each time the function is called, increase attemptCount by 1.
+
+      2: Password Check
+      Each time the function is called, increase attemptCount by 1.
+
+      3: Account lock 
+      If attemptCount exceeds 3, return "Account locked due to too many failed login attempts" and prevent further login attempts.
+  
